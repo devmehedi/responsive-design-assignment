@@ -3,6 +3,8 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+/* common styles */
+
 .description{
     color: #727272;
     margin-top: 20px;
@@ -21,43 +23,48 @@
     font-weight: 700;
     font-size: 45px;
 }
+
+/* header styles */
+
 header{
     background-color: rgba(255, 144, 14, 0.1);
 }
-.navigation{
+.header-container{
     display: flex;
     justify-content: space-between;
     margin: 0 200px;
     align-items: center;
 }
-.logo{
+.logo h2{
     font-weight: 700;
     font-size: 45px;
     color: #131313;
     margin-top: 50px;
+    margin-bottom: 50px;
+    
 }
 .navigation ul{
-    margin-top: 50px;
     display: flex;
 }
 .navigation ul li{
     list-style: none;
-    margin-left: 70px;
 }
-.navigation a{
+.navigation ul li a{
+    margin-left: 40px;
     text-decoration: none;
-    color: #424242;
+    font-weight: 500;
     font-size: 18px;
-    font-weight: 500px;
+    color: #424242;
 }
+
+/* brand styeles */
 .brand-container{
     background-color: rgba(255, 144, 14, 0.1);
 }
 .brand-info{
-    width: 862px;
-    margin: auto;
-    /* align-items: center; */
+    width: 100%;
     text-align: center;
+    margin: 0 auto;
 }
 .brand-info h2{
     font-weight: 700;
@@ -75,8 +82,10 @@ header{
     padding-bottom: 50px;
 }
 .brand-img img{
-    width: 1100px;
+    width: 100%;
 }
+
+/* feature styles */
 .features{
     display: flex;
     margin: 80px 200px;
@@ -90,6 +99,7 @@ header{
 }
 .feature-img img{
     width: 100%;
+    padding: 0 30px;
 }
 .feature-info{
     margin-left: 70px;
@@ -146,10 +156,7 @@ header{
     margin-left: 760px;
 }
 .ex-btn{
-    /* position: relative; */
-    /* z-index: 1; */
-    /* display: block; */
-    /* margin: -310px 770px; */
+    
     color: white;
     background-color: #FF900E;
     border: none;
@@ -164,7 +171,7 @@ header{
     font-size: 25px;
 }
 
-/* some fact section  */
+/* some fact styles  */
 .fact{
     margin: 100px 200px;
 }
@@ -194,7 +201,7 @@ header{
     margin-bottom: 1 0px;
 }
 
-/* sponsore section  */
+/* sponsore styles  */
 .sponsore{
     margin: 100px 200px;
 }
@@ -220,7 +227,93 @@ footer{
 }
 
 @media screen and (max-width:688px) {
-    
-
+    .section-title{
+        font-size: 35px;
+    }
+    .logo h2{
+        font-size: 38px;
+    }
+    .header-container{
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .navigation ul{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .navigation ul li{
+        margin-bottom: 10px;
+    }
+    .navigation ul li a{
+        margin: 0;
+    }
+    .brand-info h2{
+        font-size: 35px;
+    }
+    .brand-info p {
+        padding: 0 15px;
+    }
+    .brand-img{
+        margin: 50px 20px;
+    }
+    .btn-container{
+        margin: 50px 80px;
+    }
+    .features{
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+    .feature-img{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .feature-img img{
+        padding: 0;
+    }
+    .feature-info{
+        width: 100%;
+        margin: 50px 20px;
+    }
+    .love-enjoy{
+        flex-direction: column;
+        margin: 50px 20px;
+        align-items: start;
+    }
+    .love-enjoy .enjoy-info{
+        width: 100%;
+    }
+    .love-enjoy .enjoy-img {
+        width: 100%;
+    }
+    .ex-btn{
+        font-size: 35px;
+        padding: 20px;
+    }
+    .fact{
+        margin: 50px 20px;
+    }
+    .catagories-items{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .catagories-item{
+        margin-bottom: 30px;
+    }
+    .catagories-item h2{
+        font-size: 35px;
+    }
+    .sponsore{
+        margin: 50px 20px;
+    }
+    .sponsore-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sponsore-item{
+        margin-bottom: 30px;
+    }
+    .about{
+        margin: 50px 20px;
+    }
 }
 
