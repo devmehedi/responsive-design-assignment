@@ -180,10 +180,11 @@ header{
     border: 1px solid #FF900E;
     border-radius: 8px;
     padding: 30px 30px; 
-    transition: ease-in-out 1s; 
+    transition: ease-in-out 1.5s; 
 }
 .catagories-item:hover{
     transform: rotate(360deg);
+    cursor: pointer;
 }
 .catagories-item h2{
     color: #424242;
